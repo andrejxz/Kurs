@@ -17,10 +17,22 @@ namespace Kurs
             InitializeComponent();
         }
 
-        private void товарToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ProductToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 example = new Form2();
-            example.Show();
+            Form2 Product = new Form2();
+            Product.Show();
+        }
+
+        private void LoginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 Login = new Form3();
+            Login.Show();
+        }
+
+        private void WorkerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 Worker = new Form4();
+            Worker.Show();
         }
     }
 }
