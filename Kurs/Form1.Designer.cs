@@ -83,14 +83,14 @@
             // ProductToolStripMenuItem
             // 
             this.ProductToolStripMenuItem.Name = "ProductToolStripMenuItem";
-            this.ProductToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ProductToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.ProductToolStripMenuItem.Text = "&Товар";
             this.ProductToolStripMenuItem.Click += new System.EventHandler(this.ProductToolStripMenuItem_Click);
             // 
             // WorkerToolStripMenuItem
             // 
             this.WorkerToolStripMenuItem.Name = "WorkerToolStripMenuItem";
-            this.WorkerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.WorkerToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.WorkerToolStripMenuItem.Text = "&Работник";
             this.WorkerToolStripMenuItem.Click += new System.EventHandler(this.WorkerToolStripMenuItem_Click);
             // 
@@ -106,9 +106,10 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
+            this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(13, 28);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(193, 260);
+            this.listView1.Size = new System.Drawing.Size(214, 260);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -116,12 +117,12 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "ID";
-            this.columnHeader1.Width = 25;
+            this.columnHeader1.Width = 50;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Название товара";
-            this.columnHeader2.Width = 105;
+            this.columnHeader2.Width = 100;
             // 
             // columnHeader3
             // 
@@ -160,6 +161,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // textBox2
             // 
