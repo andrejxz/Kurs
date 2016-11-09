@@ -37,6 +37,8 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,8 +49,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -126,6 +126,14 @@
             this.columnHeader2.Text = "Название товара";
             this.columnHeader2.Width = 100;
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Кол-во";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Цена";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -198,6 +206,7 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(70, 292);
             this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(157, 20);
             this.textBox4.TabIndex = 10;
             // 
@@ -213,14 +222,6 @@
             0,
             0});
             this.numericUpDown1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown1_KeyDown);
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Кол-во";
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Цена";
             // 
             // Form1
             // 

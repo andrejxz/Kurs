@@ -62,7 +62,7 @@ namespace Kurs
             Product s = new Product();
             s.ID = Convert.ToInt32(textBox1.Text);
             s.Name = "Name";
-            s.Price = 0;
+            s.Price = 500;
             s.count = Convert.ToInt32(numericUpDown1.Value);
             list.Add(s);
             textBox1.Clear();
@@ -81,15 +81,18 @@ namespace Kurs
         private void ShowAll()
         {
             listView1.Items.Clear();
+            double summ = 0;
             foreach (var i in list)
             {
                 ListViewItem lvi = new ListViewItem();
                 lvi.Text = Convert.ToString(i.ID);
                 lvi.SubItems.Add(i.Name);
                 lvi.SubItems.Add(Convert.ToString(i.count));
-                lvi.SubItems.Add(Convert.ToString(i.Price));
+                lvi.SubItems.Add(Convert.ToString(i.Price*i.count));
                 listView1.Items.Add(lvi);
+                summ = summ + i.Price*i.count;
             }
+            textBox4.Text = Convert.ToString(summ);
         }
 
         private void numericUpDown1_KeyDown(object sender, KeyEventArgs e)
