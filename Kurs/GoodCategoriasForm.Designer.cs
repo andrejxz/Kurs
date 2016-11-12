@@ -30,25 +30,25 @@
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GoodCategoriasForm));
 			this.goodCategoryBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+			this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+			this.goodCategoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+			this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
 			this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
 			this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-			this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
 			this.goodCategoryBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
 			this.goodCategoryDataGridView = new System.Windows.Forms.DataGridView();
 			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.goodCategoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.goodCategoryBindingNavigator)).BeginInit();
 			this.goodCategoryBindingNavigator.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.goodCategoryDataGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.goodCategoryBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.goodCategoryDataGridView)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// goodCategoryBindingNavigator
@@ -82,6 +82,35 @@
 			this.goodCategoryBindingNavigator.TabIndex = 0;
 			this.goodCategoryBindingNavigator.Text = "bindingNavigator1";
 			// 
+			// bindingNavigatorAddNewItem
+			// 
+			this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+			this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+			this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+			this.bindingNavigatorAddNewItem.Text = "Добавить";
+			// 
+			// goodCategoryBindingSource
+			// 
+			this.goodCategoryBindingSource.DataSource = typeof(Model.GoodCategory);
+			// 
+			// bindingNavigatorCountItem
+			// 
+			this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+			this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 22);
+			this.bindingNavigatorCountItem.Text = "из {0}";
+			this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+			// 
+			// bindingNavigatorDeleteItem
+			// 
+			this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+			this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+			this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+			this.bindingNavigatorDeleteItem.Text = "Удалить";
+			// 
 			// bindingNavigatorMoveFirstItem
 			// 
 			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -114,16 +143,9 @@
 			this.bindingNavigatorPositionItem.Text = "0";
 			this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
 			// 
-			// bindingNavigatorCountItem
-			// 
-			this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-			this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 22);
-			this.bindingNavigatorCountItem.Text = "из {0}";
-			this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-			// 
 			// bindingNavigatorSeparator1
 			// 
-			this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+			this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
 			this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
 			// 
 			// bindingNavigatorMoveNextItem
@@ -146,26 +168,8 @@
 			// 
 			// bindingNavigatorSeparator2
 			// 
-			this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+			this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
 			this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-			// 
-			// bindingNavigatorAddNewItem
-			// 
-			this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-			this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-			this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-			this.bindingNavigatorAddNewItem.Text = "Добавить";
-			// 
-			// bindingNavigatorDeleteItem
-			// 
-			this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-			this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-			this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-			this.bindingNavigatorDeleteItem.Text = "Удалить";
 			// 
 			// goodCategoryBindingNavigatorSaveItem
 			// 
@@ -178,6 +182,7 @@
 			// 
 			// goodCategoryDataGridView
 			// 
+			this.goodCategoryDataGridView.AllowUserToAddRows = false;
 			this.goodCategoryDataGridView.AutoGenerateColumns = false;
 			this.goodCategoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.goodCategoryDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -195,10 +200,6 @@
 			this.dataGridViewTextBoxColumn1.HeaderText = "Название";
 			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
 			// 
-			// goodCategoryBindingSource
-			// 
-			this.goodCategoryBindingSource.DataSource = typeof(Model.GoodCategory);
-			// 
 			// GoodCategoriasForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,8 +213,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.goodCategoryBindingNavigator)).EndInit();
 			this.goodCategoryBindingNavigator.ResumeLayout(false);
 			this.goodCategoryBindingNavigator.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.goodCategoryDataGridView)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.goodCategoryBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.goodCategoryDataGridView)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
