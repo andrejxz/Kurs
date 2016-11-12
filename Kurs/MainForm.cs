@@ -14,19 +14,19 @@ namespace Kurs
 {
 	public partial class MainForm : Form
 	{
-		DBContext context = new DBContext();
 		public MainForm()
 		{
 			InitializeComponent();
-			context.GoodCategories.Load();
-			goodCategoryBindingSource.DataSource = context.GoodCategories.Local.ToBindingList();
 		}
 
-		private void goodCategoryBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+		private void категорииТоваровToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			goodCategoryBindingSource.EndEdit();
-			Validate();
-			context.SaveChanges();
+			using (var f = new GoodCategoriasForm())  f.ShowDialog();
+		}
+
+		private void товарыToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			using (var f = new GoodsForm())  f.ShowDialog();
 		}
 	}
 }
