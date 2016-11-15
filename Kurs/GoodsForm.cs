@@ -17,6 +17,7 @@ namespace Kurs
 		public GoodsForm()
 		{
 			InitializeComponent();
+			DBContext.Remake();
 			DBContext.Goods.Load();
 			DBContext.GoodCategories.Load();
 			goodBindingSource.DataSource = DBContext.Goods.Local.ToBindingList();
@@ -25,21 +26,11 @@ namespace Kurs
 
 		private void goodBindingNavigatorSaveItem_Click(object sender, EventArgs e)
 		{
-			try {
+			FormHelper.Execute(() => {
 				goodBindingSource.EndEdit();
 				Validate();
 				DBContext.Save();
-			}
-			catch(System.Data.Entity.Validation.DbEntityValidationException ex) {
-				MessageBox.Show(this, 
-					string.Format("Сообщение: {0}\nОшибки валидации: {1}",ex.Message,ex.EntityValidationErrors),
-					"Ошибка сохранения",
-					MessageBoxButtons.OK, MessageBoxIcon.Error);
-			}
-			catch (Exception ex) {
-				MessageBox.Show(this, ex.Message, "Ошибка сохранения",
-					MessageBoxButtons.OK, MessageBoxIcon.Error);
-			}
+			}, "Ошибка сохранения");			
 		}
 	}
 }

@@ -29,5 +29,10 @@ namespace Model
 		[Description("розничная цена товара")]
 		[DisplayName("Цена")]
 		public double Price { get; set; }
+
+		public override string ToString()
+		{
+			return Name;
+		}
 	}
 }

@@ -1,6 +1,6 @@
 ﻿namespace Kurs
 {
-	partial class GoodsForm
+	partial class StoreForm
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,11 +28,12 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GoodsForm));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StoreForm));
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			this.goodBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			this.storeItemBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
 			this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-			this.goodBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.storeItemBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
 			this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -43,27 +44,27 @@
 			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-			this.goodBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-			this.goodDataGridView = new System.Windows.Forms.DataGridView();
+			this.storeItemBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+			this.goodBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.storeItemDataGridView = new System.Windows.Forms.DataGridView();
 			this.dataGridViewTextBoxColumn1 = new KURS.ExtendedComboBoxColumn();
-			this.goodCategoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			((System.ComponentModel.ISupportInitialize)(this.goodBindingNavigator)).BeginInit();
-			this.goodBindingNavigator.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.storeItemBindingNavigator)).BeginInit();
+			this.storeItemBindingNavigator.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.storeItemBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.goodBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.goodDataGridView)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.goodCategoryBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.storeItemDataGridView)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// goodBindingNavigator
+			// storeItemBindingNavigator
 			// 
-			this.goodBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-			this.goodBindingNavigator.BindingSource = this.goodBindingSource;
-			this.goodBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-			this.goodBindingNavigator.CountItemFormat = "из {0}";
-			this.goodBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-			this.goodBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.storeItemBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+			this.storeItemBindingNavigator.BindingSource = this.storeItemBindingSource;
+			this.storeItemBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+			this.storeItemBindingNavigator.CountItemFormat = "из {0}";
+			this.storeItemBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+			this.storeItemBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -75,17 +76,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.goodBindingNavigatorSaveItem});
-			this.goodBindingNavigator.Location = new System.Drawing.Point(0, 0);
-			this.goodBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-			this.goodBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-			this.goodBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-			this.goodBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-			this.goodBindingNavigator.Name = "goodBindingNavigator";
-			this.goodBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-			this.goodBindingNavigator.Size = new System.Drawing.Size(451, 25);
-			this.goodBindingNavigator.TabIndex = 0;
-			this.goodBindingNavigator.Text = "bindingNavigator1";
+            this.storeItemBindingNavigatorSaveItem});
+			this.storeItemBindingNavigator.Location = new System.Drawing.Point(0, 0);
+			this.storeItemBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+			this.storeItemBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+			this.storeItemBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+			this.storeItemBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+			this.storeItemBindingNavigator.Name = "storeItemBindingNavigator";
+			this.storeItemBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+			this.storeItemBindingNavigator.Size = new System.Drawing.Size(378, 25);
+			this.storeItemBindingNavigator.TabIndex = 0;
+			this.storeItemBindingNavigator.Text = "bindingNavigator1";
 			// 
 			// bindingNavigatorAddNewItem
 			// 
@@ -96,9 +97,9 @@
 			this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
 			this.bindingNavigatorAddNewItem.Text = "Добавить";
 			// 
-			// goodBindingSource
+			// storeItemBindingSource
 			// 
-			this.goodBindingSource.DataSource = typeof(Model.Good);
+			this.storeItemBindingSource.DataSource = typeof(Model.StoreItem);
 			// 
 			// bindingNavigatorCountItem
 			// 
@@ -176,75 +177,78 @@
 			this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
 			this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
 			// 
-			// goodBindingNavigatorSaveItem
+			// storeItemBindingNavigatorSaveItem
 			// 
-			this.goodBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.goodBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("goodBindingNavigatorSaveItem.Image")));
-			this.goodBindingNavigatorSaveItem.Name = "goodBindingNavigatorSaveItem";
-			this.goodBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-			this.goodBindingNavigatorSaveItem.Text = "Сохранить данные";
-			this.goodBindingNavigatorSaveItem.Click += new System.EventHandler(this.goodBindingNavigatorSaveItem_Click);
+			this.storeItemBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.storeItemBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("storeItemBindingNavigatorSaveItem.Image")));
+			this.storeItemBindingNavigatorSaveItem.Name = "storeItemBindingNavigatorSaveItem";
+			this.storeItemBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+			this.storeItemBindingNavigatorSaveItem.Text = "Сохранить данные";
+			this.storeItemBindingNavigatorSaveItem.Click += new System.EventHandler(this.storeItemBindingNavigatorSaveItem_Click);
 			// 
-			// goodDataGridView
+			// goodBindingSource
 			// 
-			this.goodDataGridView.AllowUserToAddRows = false;
-			this.goodDataGridView.AutoGenerateColumns = false;
-			this.goodDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.goodDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+			this.goodBindingSource.DataSource = typeof(Model.Good);
+			// 
+			// storeItemDataGridView
+			// 
+			this.storeItemDataGridView.AllowUserToAddRows = false;
+			this.storeItemDataGridView.AutoGenerateColumns = false;
+			this.storeItemDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.storeItemDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-			this.goodDataGridView.DataSource = this.goodBindingSource;
-			this.goodDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.goodDataGridView.Location = new System.Drawing.Point(0, 25);
-			this.goodDataGridView.Name = "goodDataGridView";
-			this.goodDataGridView.Size = new System.Drawing.Size(451, 264);
-			this.goodDataGridView.TabIndex = 1;
+			this.storeItemDataGridView.DataSource = this.storeItemBindingSource;
+			this.storeItemDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.storeItemDataGridView.Location = new System.Drawing.Point(0, 25);
+			this.storeItemDataGridView.Name = "storeItemDataGridView";
+			this.storeItemDataGridView.Size = new System.Drawing.Size(378, 292);
+			this.storeItemDataGridView.TabIndex = 1;
 			// 
 			// dataGridViewTextBoxColumn1
 			// 
-			this.dataGridViewTextBoxColumn1.DataPropertyName = "Categiry";
-			this.dataGridViewTextBoxColumn1.DataSource = this.goodCategoryBindingSource;
-			this.dataGridViewTextBoxColumn1.HeaderText = "Категория";
+			this.dataGridViewTextBoxColumn1.DataPropertyName = "Good";
+			this.dataGridViewTextBoxColumn1.DataSource = this.goodBindingSource;
+			this.dataGridViewTextBoxColumn1.HeaderText = "Товар";
 			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
 			this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
 			this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
 			// 
-			// goodCategoryBindingSource
-			// 
-			this.goodCategoryBindingSource.DataSource = typeof(Model.GoodCategory);
-			// 
 			// dataGridViewTextBoxColumn2
 			// 
-			this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
-			this.dataGridViewTextBoxColumn2.HeaderText = "Название";
+			this.dataGridViewTextBoxColumn2.DataPropertyName = "Count";
+			dataGridViewCellStyle1.Format = "# шт\\.";
+			dataGridViewCellStyle1.NullValue = "-";
+			this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle1;
+			this.dataGridViewTextBoxColumn2.HeaderText = "Количество";
 			this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
 			// 
 			// dataGridViewTextBoxColumn3
 			// 
-			this.dataGridViewTextBoxColumn3.DataPropertyName = "Price";
-			dataGridViewCellStyle1.Format = "C2";
-			dataGridViewCellStyle1.NullValue = null;
-			this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle1;
-			this.dataGridViewTextBoxColumn3.HeaderText = "Цена";
+			this.dataGridViewTextBoxColumn3.DataPropertyName = "PurchasePrice";
+			dataGridViewCellStyle2.Format = "C2";
+			dataGridViewCellStyle2.NullValue = null;
+			this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle2;
+			this.dataGridViewTextBoxColumn3.HeaderText = "Закуп цена";
 			this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
 			// 
-			// GoodsForm
+			// StoreForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(451, 289);
-			this.Controls.Add(this.goodDataGridView);
-			this.Controls.Add(this.goodBindingNavigator);
-			this.Name = "GoodsForm";
+			this.ClientSize = new System.Drawing.Size(378, 317);
+			this.Controls.Add(this.storeItemDataGridView);
+			this.Controls.Add(this.storeItemBindingNavigator);
+			this.Name = "StoreForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Товары";
-			((System.ComponentModel.ISupportInitialize)(this.goodBindingNavigator)).EndInit();
-			this.goodBindingNavigator.ResumeLayout(false);
-			this.goodBindingNavigator.PerformLayout();
+			this.Text = "Склад";
+			((System.ComponentModel.ISupportInitialize)(this.storeItemBindingNavigator)).EndInit();
+			this.storeItemBindingNavigator.ResumeLayout(false);
+			this.storeItemBindingNavigator.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.storeItemBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.goodBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.goodDataGridView)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.goodCategoryBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.storeItemDataGridView)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -252,8 +256,8 @@
 
 		#endregion
 
-		private System.Windows.Forms.BindingSource goodBindingSource;
-		private System.Windows.Forms.BindingNavigator goodBindingNavigator;
+		private System.Windows.Forms.BindingSource storeItemBindingSource;
+		private System.Windows.Forms.BindingNavigator storeItemBindingNavigator;
 		private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
 		private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
 		private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -265,9 +269,9 @@
 		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
 		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
 		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-		private System.Windows.Forms.ToolStripButton goodBindingNavigatorSaveItem;
-		private System.Windows.Forms.DataGridView goodDataGridView;
-		private System.Windows.Forms.BindingSource goodCategoryBindingSource;
+		private System.Windows.Forms.ToolStripButton storeItemBindingNavigatorSaveItem;
+		private System.Windows.Forms.DataGridView storeItemDataGridView;
+		private System.Windows.Forms.BindingSource goodBindingSource;
 		private KURS.ExtendedComboBoxColumn dataGridViewTextBoxColumn1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

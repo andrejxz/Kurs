@@ -35,6 +35,13 @@ namespace Model
 				return _instace;
 			}
 		}
+		/// <summary>
+		/// пересоздает контекст БД
+		/// </summary>
+		public static void Remake()
+		{
+			_instace = new DBContext();
+		}
 
 		public static DbSet<GoodCategory> GoodCategories
 		{

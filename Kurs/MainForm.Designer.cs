@@ -134,12 +134,14 @@
 			this.складToolStripMenuItem.Name = "складToolStripMenuItem";
 			this.складToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
 			this.складToolStripMenuItem.Text = "Склад";
+			this.складToolStripMenuItem.Click += new System.EventHandler(this.складToolStripMenuItem_Click);
 			// 
 			// продажиToolStripMenuItem
 			// 
 			this.продажиToolStripMenuItem.Name = "продажиToolStripMenuItem";
 			this.продажиToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
 			this.продажиToolStripMenuItem.Text = "Продажи";
+			this.продажиToolStripMenuItem.Click += new System.EventHandler(this.продажиToolStripMenuItem_Click);
 			// 
 			// аРМToolStripMenuItem
 			// 

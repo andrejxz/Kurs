@@ -23,12 +23,17 @@ namespace Model
 		/// </summary>
 		[Description("количество товара на складе")]
 		[DisplayName("Количество")]
-		public uint Count { get; set; }
+		public int Count { get; set; }
 		/// <summary>
 		/// цена, по которой купили данный товар
 		/// </summary>
 		[Description("цена, по которой купили данный товар")]
 		[DisplayName("Закуп цена")]
 		public double PurchasePrice { get; set; }
+
+		public override string ToString()
+		{
+			return Good != null ? Good.ToString() : "<товар не указан>";
+		}
 	}
 }

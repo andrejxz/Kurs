@@ -12,20 +12,23 @@ using Model;
 
 namespace Kurs
 {
-	public partial class GoodCategoriasForm : Form
+	public partial class SalesForm : Form
 	{
-		public GoodCategoriasForm()
+		public SalesForm()
 		{
 			InitializeComponent();
 			DBContext.Remake();
-			DBContext.GoodCategories.Load();
-			goodCategoryBindingSource.DataSource = DBContext.GoodCategories.Local.ToBindingList();
+			DBContext.Goods.Load();
+			DBContext.StoreItems.Load();
+			DBContext.SaleItems.Load();
+			storeItemBindingSource.DataSource = DBContext.StoreItems.Local.ToBindingList();
+			saleItemBindingSource.DataSource = DBContext.SaleItems.Local.ToBindingList();
 		}
 
-		private void goodCategoryBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+		private void saleItemBindingNavigatorSaveItem_Click(object sender, EventArgs e)
 		{
 			FormHelper.Execute(() => {
-				goodCategoryBindingSource.EndEdit();
+				saleItemBindingSource.EndEdit();
 				Validate();
 				DBContext.Save();
 			}, "Ошибка сохранения");
