@@ -14,6 +14,9 @@ namespace Model
 		[DisplayName("Название")]
 		public string Name { get; set; }
 
-		public GoodCategory Self { get { return this; } }
+		public override string ToString()
+		{
+			return Name;
+		}
 	}
 }
