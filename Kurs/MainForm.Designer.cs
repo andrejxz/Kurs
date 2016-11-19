@@ -53,7 +53,7 @@
             this.аРМToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(866, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(324, 24);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -156,12 +156,13 @@
 			this.кассирToolStripMenuItem.Name = "кассирToolStripMenuItem";
 			this.кассирToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
 			this.кассирToolStripMenuItem.Text = "Кассир";
+			this.кассирToolStripMenuItem.Click += new System.EventHandler(this.кассирToolStripMenuItem_Click);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(866, 335);
+			this.ClientSize = new System.Drawing.Size(324, 70);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MainForm";

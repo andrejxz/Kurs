@@ -31,6 +31,19 @@ namespace Model
 		[DisplayName("Закуп цена")]
 		public double PurchasePrice { get; set; }
 
+		/// <summary>
+		/// цена продажи единицы товара
+		/// </summary>
+		[Description("цена продажи единицы товара")]
+		[DisplayName("Цена")]
+		public double Price
+		{
+			get
+			{
+				return Good == null ? 0 : Good.Price;
+			}
+		}
+
 		public override string ToString()
 		{
 			return Good != null ? Good.ToString() : "<товар не указан>";

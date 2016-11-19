@@ -49,5 +49,10 @@ namespace Kurs
 		{
 			Show<SalesForm>();
 		}
+
+		private void кассирToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Show<CashBoxForm>();
+		}
 	}
 }

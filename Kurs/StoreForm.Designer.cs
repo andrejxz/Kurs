@@ -218,7 +218,7 @@
 			// dataGridViewTextBoxColumn2
 			// 
 			this.dataGridViewTextBoxColumn2.DataPropertyName = "Count";
-			dataGridViewCellStyle1.Format = "# шт\\.";
+			dataGridViewCellStyle1.Format = "0 шт\\.";
 			dataGridViewCellStyle1.NullValue = "-";
 			this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle1;
 			this.dataGridViewTextBoxColumn2.HeaderText = "Количество";

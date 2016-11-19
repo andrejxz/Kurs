@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CashBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashBoxForm.Designer.cs">
+      <DependentUpon>CashBoxForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExtendedComboBoxColumn.cs" />
     <Compile Include="FormHelper.cs" />
     <Compile Include="GoodCategoriasForm.cs">
@@ -89,6 +95,9 @@
     <Compile Include="StoreForm.Designer.cs">
       <DependentUpon>StoreForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CashBoxForm.resx">
+      <DependentUpon>CashBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GoodCategoriasForm.resx">
       <DependentUpon>GoodCategoriasForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +123,7 @@
       <DependentUpon>StoreForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\CashBoxForm.SalePositionContainer.datasource" />
     <None Include="Properties\DataSources\Model.Good.datasource" />
     <None Include="Properties\DataSources\Model.GoodCategory.datasource" />
     <None Include="Properties\DataSources\Model.SaleItem.datasource" />
